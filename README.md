@@ -1,5 +1,5 @@
-# MEGACO Backend
-The best omnichannel software for great entrepreneurs.
+# Check English Grammar
+Web Apps to check grammar of your sentences
 
 ## Run Backend project
 In your terminal, run the following commands: <br>
