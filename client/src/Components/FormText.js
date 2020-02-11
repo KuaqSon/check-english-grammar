@@ -50,7 +50,7 @@ export default function FormText({ callback }) {
           </CopyToClipboard>
         </div>
 
-        <input className="btn" type="submit" value="check" />
+        <input className="btn" type="submit" value="Check" />
 
         {loading && <Loading />}
       </form>

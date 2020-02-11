@@ -183,6 +183,10 @@ h6 {
   box-shadow: 0px 3px 0px #b93f31;
 }
 
+.gg-text {
+  color: #db4a39;
+}
+
 footer {
   color: #333333;
   padding-bottom: 16px;
@@ -194,4 +198,85 @@ footer {
   justify-content: flex-end;
   margin-top: -10px;
   margin-bottom: 16px;
+}
+
+.result-block {
+  text-align: left;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: #f1f2f2;
+}
+
+.result-block .result-block_title {
+  color: #00acee;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 10px 0;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.result-block_title::after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 68px;
+  background: #5433ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #a5fecb,
+    #20bdff,
+    #5433ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #a5fecb,
+    #20bdff,
+    #5433ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.list {
+  text-align: left;
+  display: block;
+  list-style: none;
+}
+
+.list .list-item {
+  display: block;
+  cursor: pointer;
+  color: #314a5c;
+  padding: 1em 1em 1em 0;
+  font-weight: 600;
+}
+
+.list-item + .list-item {
+  border-top: 1px dashed #b0b9c5;
+}
+
+.quote-block {
+  background-color: #ffff;
+  padding: 16px 0 16px 16px;
+  border-left: 4px solid #00acee;
+  margin: 16px 0;
+  color: #757575;
+  font-weight: 600;
+}
+
+.quote-block span {
+  font-weight: 600;
+}
+
+.mr-2 {
+  margin-right: 0.5em;
+}
+
+.hightlight-text {
+  color: #314a5c;
+}
+
+.info-block {
+  margin-top: 16px;
 }
