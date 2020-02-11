@@ -81,7 +81,7 @@ h5 {
 
 h5 > a,
 a:visited {
-  color: #fff;
+  color: #777;
   text-decoration: underline;
 }
 
@@ -147,9 +147,7 @@ span {
 h6 {
   text-align: center;
   padding: 20px;
-  padding-top: 35px;
   color: #777;
-  cursor: pointer;
 }
 
 .social {

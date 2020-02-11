@@ -1,10 +1,10 @@
 import axios from "axios";
-const BaseUrl = process.env.MODE === "prod" ? "" : "http://localhost:3001";
+const baseUrl = process.env.NODE_ENV === "development" ? "http://localhost:3001" : "";
 
 export const checkSentence = ({ text }, callback) => {
   axios({
     method: "post",
-    url: `${BaseUrl}/api/v1/grammar/check`,
+    url: `${baseUrl}/api/v1/grammar/check`,
     data: {
       language: "en-US",
       text

@@ -4,7 +4,7 @@
     "description": "Check English grammar",
     "main": "app.js",
     "scripts": {
-        "start": "node ./app.js",
+        "start": "node ./app.js && set API_KEY=KS9C5N3Y",
         "watch": "nodemon ./app.js",
         "test": "mocha --timeout 10000 --recursive"
     },
