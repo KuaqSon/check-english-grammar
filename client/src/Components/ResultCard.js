@@ -3,10 +3,10 @@ export default function ResultCard({ result }) {
   const {
     message,
     rule,
-    sentence,
+    // sentence,
     replacements,
-    offset,
-    length,
+    // offset,
+    // length,
     context: { text: contextText, offset: contextOffset, length: contextLength }
   } = result;
 
