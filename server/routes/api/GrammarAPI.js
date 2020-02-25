@@ -1,6 +1,8 @@
 // External Dependencies
 const router = require('express').Router()
 const axios = require('axios')
+const {correct, Grammarly } = require('@stewartmcgown/grammarly-api');
+const free = new Grammarly();
 
 // Internal Dependencies
 const DefaultRoutes = require('../../routes/DefaultRoutes')
@@ -19,12 +21,17 @@ router.post(DefaultRoutes.GRAMMAR.CHECK, async (req, res) => {
       }
     })
 
+    const results = await free.analyse(text);
+    const { corrected } = await new Grammarly().analyse(text).then(correct);
+
     if (resp.data) {
       const { matches } = resp.data
 
       return res.json(
         buildReponse(RETURN_CODE.SUCCESS, 'successfully', {
-          matches
+          matches,
+          results,
+          corrected
         })
       )
     } else {
